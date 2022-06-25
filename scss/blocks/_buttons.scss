@@ -1,0 +1,27 @@
+button {
+
+    display: block;
+    width: 160px;
+    height: 40px;
+    border: 2px solid $red-color;
+    background: transparent;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $red-color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $red-color;
+        color: $white-color;
+        box-shadow: 0px 4px 7px -1px rgba(0, 0, 0, 0.37);
+    }
+
+    &__submit {
+
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,433 @@
+@media (min-width: 1023px) {
+    .promo .promo__testdrive {
+        &-item {
+            .strwheel-red {
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    header.header {
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding: 0;
+        padding-right: 10px;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+
+        .header__navigation {
+
+            display: none;
+        }
+
+        .header__login {
+            display: none;
+        }
+
+        .wrap {
+            display: none;
+            position: absolute;
+            top: 0;
+            width: 100vw;
+            min-height: 100vh;
+            z-index: 6;
+
+        }
+
+        .header__burger_active {
+            display: flex;
+        }
+
+        div.header__burger {
+            display: flex;
+
+            &-menu {
+                display: flex;
+                justify-content: center;
+                background-color: $red-color;
+                position: absolute;
+                top: 0;
+                min-height: 100%;
+                width: 80%;
+                z-index: 12;
+                border-right: 1px solid rgba(0, 0, 0, 0.3);
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+
+                        &:nth-child(5) {
+                            margin-bottom: 30px;
+                        }
+
+                        a {
+                            color: $white-color;
+                            font-weight: 500;
+                            font-size: 24px;
+
+
+                            &:hover {
+                                color: $main-color;
+                                border-bottom: 3px solid #000;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .promo {
+        &__subheader {
+            margin-bottom: 40px;
+        }
+
+        .promo__tesla-bg {
+            margin-bottom: 40px;
+
+            .tesla-bg-sm {
+                display: block;
+            }
+
+            .tesla-bg-big {
+                display: none;
+            }
+        }
+
+        .promo__info {
+            justify-content: center;
+            margin-right: 0;
+            margin-bottom: 40px;
+
+            &-item {
+                p.text {
+                    font-size: 50px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 5px;
+
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+
+                img {
+                    width: 40px;
+                }
+
+                &:first-child {
+                    img {
+                        width: 60px;
+                    }
+                }
+            }
+        }
+
+        .promo__testdrive {
+            button.button__testdrive {
+                width: 220px;
+                height: 55px;
+                background: #E51937;
+                color: $white-color;
+            }
+
+            &-item {
+                p {
+                    color: $red-color;
+                    font-size: 16px;
+                }
+
+
+                .strwheel-red {
+                    width: 30px;
+                    font-size: 16px;
+                    margin-right: 15px;
+                }
+
+                .strwheel-blk {
+                    display: none;
+                }
+            }
+        }
+
+        .promo__footer {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .future {
+        .future__wrapper {
+            flex-direction: column;
+
+            .future__model-s {
+                p {
+                    right: 60px;
+                    text-align: right;
+                }
+
+                .tesla-inside-big {
+                    display: block;
+                }
+
+                .tesla-inside-sm {
+                    display: none;
+                }
+            }
+
+            .future__article {
+                position: static;
+                bottom: 0;
+                width: 100%;
+                padding: 55px 55px 52px 35px;
+                justify-content: space-between;
+                box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.33);
+
+                .future__article-wrap {
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                .future__article-header {
+                    width: 350px;
+
+                    h4 {
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .future__article-items {
+                    margin-bottom: 60px;
+                }
+
+                .future__article-footer {
+                    justify-content: center;
+
+                    p {
+                        margin-right: 30px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .safety {
+        .safety__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        .safety__article {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            padding: 55px 55px 52px 35px;
+            justify-content: space-between;
+            box-shadow: -1px -4px 10px 0px rgba(0, 0, 0, 0.33);
+
+            .safety__article-wrap {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .safety__article-header {
+                width: 350px;
+
+                h4 {
+                    margin-bottom: 40px;
+                }
+            }
+
+            .safety__article-items {
+                margin-bottom: 60px;
+            }
+
+            .safety__article-guard {
+                display: none;
+            }
+
+            .safety__article-footer {
+                justify-content: center;
+
+                p {
+                    margin-right: 30px;
+                }
+            }
+
+        }
+
+        .safety__carousel {
+            display: block;
+            max-width: 1440px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .safety__model-s {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    header.header {
+        .header__logo {
+            width: 140px;
+        }
+
+        .header__burger {
+            width: 24px;
+        }
+    }
+
+    .promo {
+        div.arrow_wrap {
+            margin-bottom: 0;
+        }
+
+        .promo__header {
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 61px;
+            margin-bottom: 5px;
+        }
+
+        .promo__subheader {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        .promo__info {
+            justify-content: center;
+            margin-right: 0;
+            margin-bottom: 40px;
+
+            &-item {
+                p.text {
+                    font-weight: 600;
+                    font-size: 27px;
+                    line-height: 33px;
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 0;
+
+                }
+
+                img {
+                    width: 34px;
+                }
+
+                &:first-child {
+                    img {
+                        width: 45px;
+                    }
+                }
+            }
+        }
+
+        .promo__testdrive {
+            button.button__testdrive {
+                width: 160px;
+                height: 40px;
+                background: #E51937;
+                color: $white-color;
+                font-size: 13px;
+            }
+
+            &-item {
+                p {
+                    font-size: 13px;
+                }
+
+
+                .strwheel-red {
+                    width: 22px;
+                    font-size: 13px;
+                    margin-right: 10px;
+                }
+
+                .strwheel-blk {
+                    display: none;
+                }
+            }
+        }
+
+        .arrow_wrap {
+            margin-bottom: 0;
+        }
+    }
+
+    .future {
+        .future__wrapper {
+            .future__model-s {
+                p {
+                    display: none;
+                }
+            }
+
+            .future__article {
+                padding: 18px 30px;
+                justify-content: center;
+
+                div.future__article-header {
+                    min-width: 300px;
+                }
+
+                .future__article-items {
+                    display: none;
+                }
+
+                .future__article-footer {
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .safety {
+        .safety__wrapper {
+            .safety__model-s {
+                p {
+                    display: none;
+                }
+            }
+
+            .safety__article {
+                padding: 18px 30px;
+                justify-content: center;
+
+                div.safety__article-header {
+                    min-width: 300px;
+                }
+
+                .safety__article-items {
+                    display: none;
+                }
+
+                .safety__article-footer {
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+}

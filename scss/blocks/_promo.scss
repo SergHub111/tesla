@@ -1,0 +1,135 @@
+.promo {
+    &__wrapper {
+        position: relative;
+    }
+
+    &__header {
+        font-weight: 600;
+        font-size: 90px;
+        line-height: 110px;
+        color: $main-color;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__subheader {
+        position: relative;
+        top: -10px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    &__container_img {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tesla-bg {
+        max-width: 1440px;
+
+        .tesla-bg-sm {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-right: 108px;
+
+        &-item {
+            display: flex;
+
+            img {
+                width: 26px;
+                margin-right: 10px;
+            }
+
+            p.text {
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 43px;
+
+                span {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            p.subtext {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            &:first-child {
+                margin-right: 80px;
+
+                img {
+                    width: 42px;
+                }
+            }
+        }
+
+
+    }
+
+    &__testdrive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+
+            img {
+                width: 22px;
+                margin-right: 5px;
+                color: $main-color;
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 16px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+    .arrow {
+        &_wrap {
+
+            margin-bottom: 100px;
+        }
+
+        &-down {
+            display: block;
+            width: 28px;
+        }
+
+        &-link {
+            display: block;
+            width: 30px;
+            margin: 0 auto;
+        }
+    }
+}

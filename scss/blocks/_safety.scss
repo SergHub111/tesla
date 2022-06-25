@@ -1,0 +1,201 @@
+.safety {
+    &__wrapper {
+        display: flex;
+        position: relative;
+        // min-height: 900px;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 68px 60px 50px;
+        bottom: 0;
+        left: 0;
+        width: 440px;
+        background-color: $red-color;
+        z-index: 20;
+        color: $white-color;
+
+        &-header {
+            margin-bottom: 55px;
+            min-width: 335px;
+
+            h4 {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 37px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 1px;
+            }
+        }
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 100px;
+
+            h4 {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 37px;
+                margin-bottom: 35px;
+            }
+        }
+
+        &-item {
+            width: 300px;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            p {
+                display: block;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 21px;
+                text-transform: uppercase;
+
+                span {
+                    font-size: 10px;
+                    line-height: 12px;
+                    text-transform: uppercase;
+                    opacity: 0.7;
+                }
+            }
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-guard {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            margin-bottom: 50px;
+
+            img {
+                margin-right: 25px;
+            }
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+
+                font-weight: 600;
+                font-size: 45px;
+                line-height: 58px;
+
+
+
+                p {
+                    display: block;
+                }
+
+                span {
+                    display: block;
+                    font-size: 21px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &-footer {
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                img {
+                    width: 22px;
+                    margin-right: 5px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white-color;
+                    display: block;
+                    margin-right: 25px;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 16px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+
+            button {
+                border: 3px solid #fff;
+                color: $white-color;
+            }
+        }
+    }
+
+    &__carousel {
+        display: none;
+        font-size: 0px;
+
+        &__inner {
+            display: flex;
+            align-items: center;
+
+
+
+
+
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 1080px;
+            }
+        }
+
+        .tns-outer [aria-controls],
+        .tns-outer [data-action] {
+            display: none;
+        }
+    }
+
+
+    &__model-s {
+        position: relative;
+
+        &-background {
+            display: block;
+            position: absolute;
+            right: 0;
+            font-weight: 600;
+            font-size: 135px;
+            line-height: 153px;
+            color: $red-color;
+            opacity: 0.1;
+        }
+
+        &-car {
+            max-width: 100%;
+            top: 259px;
+            right: 100px;
+            z-index: 20;
+            position: relative;
+
+            img {
+                width: 100%;
+                max-width: 1050px;
+            }
+        }
+
+    }
+}
